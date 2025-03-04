@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-container {
+    width: 60%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    width: 120px; /* Đặt kích thước ảnh */
+    height: 120px; /* Đặt chiều cao bằng với chiều rộng để không bị méo */
+    object-fit: cover; /* Cắt ảnh theo khung mà không bị méo */
+    border-radius: 50%; /* Làm tròn ảnh */
+    border: 3px solid #007bff; /* Viền xanh */
+}
+
+h1 {
+    margin: 10px 0;
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e9ecef;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
