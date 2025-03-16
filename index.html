@@ -1,79 +1,167 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Phan Lê Thụat</title>
+    <title>Phan Lê Thuật - CV</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #d9e3f0;
+            display: flex;
+            justify-content: center;
             padding: 20px;
-            background-color: #f4f4f4;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .cv-container {
+            width: 900px;
+            background: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            position: relative;   
         }
-        h1, h2, h3 {
-            color: #333;
+        .header {
+            background: #2c3e50;
+            color: white;
+            text-align: left;
+            padding: 40px 20px;
+            position: relative;
         }
-        h1 {
-            text-align: center;
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid white;
+            position: absolute;
+            left: 18%;
+            top: 10px;
+            transform: translate(-50%, 0);
+            z-index: 10;
+            object-fit: cover;
         }
-        .contact, .skills, .projects, .education, .certifications, .objective {
-            margin-bottom: 20px;
-        }
-        .contact p, .skills p, .projects p, .education p, .certifications p, .objective p {
+        .header h1 {
+            font-size: 36px;
             margin: 5px 0;
+            padding-left: 290px; /* Di chuyển chữ qua phải */
         }
-        .project-item {
+        .header h2 {
+            font-size: 27px;
+            font-weight: normal;
+            color: white;
+            margin: 0;
+            padding-left: 290px; /* Di chuyển chữ qua phải */
+        }
+        .content {
+            display: flex;
+            margin-top: 0;
+        }
+        .sidebar {
+            width: 35%;
+            background: #ecf0f1;
+            color: black;
+            padding: 20px;
+            text-align: left;
+            position: relative;
+        }
+        .main-content {
+            width: 65%;
+            padding: 30px;
+        }
+        h3 {
+            color: black;
+            font-size: 18px;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
             margin-bottom: 10px;
         }
-        .github-link {
-            color: blue;
-            text-decoration: underline;
+        .project {
+            background: #ecf0f1;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #2980b9;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
+    <div class="cv-container">
+        <div class="header">
+            <h1 style="text-align: left; margin-left: 5000000px; margin: 0 auto; width: fit-content;">PHAN LÊ THUẬT</h1>
+            <h2 style="text-align: left; margin-left: 5000000px; margin: 0 auto; width: fit-content; color: white;">INTERN UNITY DEV</h2>
 
-<div class="container">
-    <h1>Phan Lê Thụat</h1>
-    
-    <div class="contact">
-        <h2>Liên Hệ</h2>
-        <p>Email: thuatlongan123@gmail.com</p>
-        <p>Địa chỉ: Dĩ An, Bình Dương</p>
-        <p>Facebook: <a href="https://www.facebook.com/thuat.phan.79025" target="_blank">thuat.phan.79025</a></p>
-        <p>Điện thoại: 0902461509</p>
-    </div>
-
-    <div class="objective">
-        <h2>Mục Tiêu Nghề Nghiệp</h2>
-        <p>Tôi mong muốn phát triển kỹ năng làm việc nhóm trong môi trường chuyên nghiệp trong khi tích lũy kinh nghiệm thực tế trong lập trình Unity thông qua việc tham gia và hoàn thành các dự án trong kỳ thực tập tại công ty TDK. Trong vòng một đến hai năm tới, mục tiêu của tôi là trở thành nhân viên chính thức và xây dựng sự nghiệp lâu dài với công ty.</p>
-    </div>
-
-    <div class="skills">
-        <h2>Kỹ Năng</h2>
-        <p>Khám phá công nghệ mới</p>
-        <p>Chơi game</p>
-        <p>Thành thạo C# và Unity Engine</p>
-        <p>Hiểu biết sâu sắc về các nguyên tắc OOP và ứng dụng của chúng trong Unity</p>
-        <p>Có khả năng hợp tác hiệu quả với nhóm và tiếp thu phản hồi để cải thiện thiết kế game</p>
-        <p>Tự động viên, chủ động và có tổ chức tốt</p>
-        <p>Có kinh nghiệm sử dụng các công cụ AI như ChatGPT và GitHub Copilot để tối ưu hóa mã và đơn giản hóa phát triển</p>
-    </div>
-
-    <div class="projects">
-        <h2>Dự Án</h2>
-        <div class="project-item">
-            <h3>2D Knight Adventure (Solo Project)</h3>
-            <p>Thời gian: 9/2024 - 12/2024</p>
-            <p>Trách nhiệm: Tưởng tượng dự án game, bao gồm cốt truyện, cơ chế và luồng gameplay. Tìm kiếm và tích hợp tài sản phù hợp với chủ đề dự án. Thiết kế UI thân thiện với người dùng. Tạo bẫy, kẻ thù và nhân vật người chơi, thực hiện các cơ chế gameplay cốt lõi. Phát triển các hệ thống chính như di chuyển của người chơi, cơ chế chiến đấu, AI kẻ thù (đường đi & phát hiện người chơi) và các chức năng game thiết yếu khác.</p>
-            <p>GitHub: <a class="github-link" href="https://github.com/lazyguy148/KnightAdventure.git" target="_blank">https://github.com/lazyguy148/KnightAdventure.git</a></p>
         </div>
+        <img src="profile.png" alt="Profile Picture" class="profile-img">
+        <div class="content">
+            <div class="sidebar">
+                <br><br><br><br><br><br><br><br><section class="contact">
+                    <h3>CONTACT</h3>
+                    <p>Email: <a href="mailto:thuatlongan123@gmail.com">thuatlongan123@gmail.com</a></p>
+                    <p>Location: Dĩ An, Bình Dương</p>
+                    <p>Phone: 0902461509</p>
+                    <p>Facebook: <a href="https://www.facebook.com/thuat.phan.79025">thuat.phan.79025</a></p>
+                </section>
+                <section class="hobby">
+                    <h3>HOBBY</h3>
+                    <p>Exploring new technologies</p>
+                    <p>Playing games</p>
+                </section>
+                <section class="certifications">
+                    <h3>CERTIFICATIONS</h3>
+                    <p>CEF Level B1 (3/2/2023)</p>
+                    <p>Communication and Teamwork Skills (11/4/2024)</p>
+                </section>
+            </div>
+            <div class="main-content">
+                <section class="career-objective">
+                    <h3>CAREER OBJECTIVE</h3>
+                    <p>I aspire to develop my teamwork skills in a professional environment while gaining hands-on experience in Unity programming by participating in and completing projects during my internship at TDK Company. Within the next one to two years, my goal is to become a full-time employee and build a long-term career with the company.</p>
+                </section>
+                <section class="education">
+                    <h3>EDUCATION</h3>
+                    <p><strong>HUTECH University of Technology</strong> (2021 - 2025)</p>
+                    <p>Bachelor's Degree in Software Engineering (Expected Graduation: 06/2025)</p>
+                    <p>GPA: 3.32 / 4.0</p>
+                </section>
+                <section class="skills">
+                    <h3>SKILLS</h3>
+                    <ul>
+                        <li>Proficient in C# and Unity Engine</li>
+                        <li>Strong grasp of OOP principles and their application in Unity</li>
+                        <li>Able to collaborate effectively with the team and incorporate feedback</li>
+                        <li>Self-motivated, proactive, and well-organized</li>
+                        <li>Experienced in using AI tools like ChatGPT and GitHub Copilot</li>
+                    </ul>
+                </section>
+                <section class="projects">
+                    <h3>PROJECTS</h3>
+                    <div class="project">
+                        <h4>2D KNIGHT ADVENTURE (Solo Project, 9/2024 - 12/2024)</h4>
+                        <ul>
+                            <li>Conceptualized the game project, including storyline, mechanics, and gameplay flow</li>
+                            <li>Searched for and integrated suitable assets</li>
+                            <li>Designed a user-friendly UI</li>
+                            <li>Developed player movement, combat mechanics, enemy AI, and other essential functions</li>
+                        </ul>
+                        <p>GitHub: <a href="https://github.com/lazyguy148/KnightAdventure.git">KnightAdventure</a></p>
+                    </div>
+                    <div class="project">
+                        <h4>3D Shooter (Team Project, 2 members, 2/2025 - 3/2025)</h4>
+                        <ul>
+                            <li>Created three weapon types using Scriptable Objects</li>
+                            <li>Implemented weapon switching mechanics and bullet collision handling</li>
+                            <li>Developed an enemy spawn system</li>
+                            <li>Configured sound effects (SFX) for weapons and enemy interactions</li>
+                        </ul>
+                        <p>GitHub: <a href="https://github.com/lazyguy148/3DShooterProject.git">3DShooterProject</a></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
